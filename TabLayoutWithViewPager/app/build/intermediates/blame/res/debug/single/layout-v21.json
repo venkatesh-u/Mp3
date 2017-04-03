@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/home/venkatesh/AndroidStudioProjects/TabLayoutWithViewPager/app/build/intermediates/res/merged/debug/layout-v21/notification_template_custom_big.xml",
+        "source": "/home/venkatesh/.android/build-cache/44e80b8967e98aeb353465df467baf911aae2cdb/output/res/layout-v21/notification_template_custom_big.xml"
+    },
+    {
+        "merged": "/home/venkatesh/AndroidStudioProjects/TabLayoutWithViewPager/app/build/intermediates/res/merged/debug/layout-v21/notification_action.xml",
+        "source": "/home/venkatesh/.android/build-cache/44e80b8967e98aeb353465df467baf911aae2cdb/output/res/layout-v21/notification_action.xml"
+    },
+    {
+        "merged": "/home/venkatesh/AndroidStudioProjects/TabLayoutWithViewPager/app/build/intermediates/res/merged/debug/layout-v21/notification_action_tombstone.xml",
+        "source": "/home/venkatesh/.android/build-cache/44e80b8967e98aeb353465df467baf911aae2cdb/output/res/layout-v21/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/home/venkatesh/AndroidStudioProjects/TabLayoutWithViewPager/app/build/intermediates/res/merged/debug/layout-v21/notification_template_icon_group.xml",
+        "source": "/home/venkatesh/.android/build-cache/44e80b8967e98aeb353465df467baf911aae2cdb/output/res/layout-v21/notification_template_icon_group.xml"
+    }
+]

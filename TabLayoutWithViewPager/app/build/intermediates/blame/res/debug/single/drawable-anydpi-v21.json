@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "/home/venkatesh/AndroidStudioProjects/TabLayoutWithViewPager/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/ic_fast_forward.xml",
+        "source": "/home/venkatesh/AndroidStudioProjects/TabLayoutWithViewPager/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_fast_forward.xml"
+    },
+    {
+        "merged": "/home/venkatesh/AndroidStudioProjects/TabLayoutWithViewPager/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/ic_equalizer.xml",
+        "source": "/home/venkatesh/AndroidStudioProjects/TabLayoutWithViewPager/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_equalizer.xml"
+    },
+    {
+        "merged": "/home/venkatesh/AndroidStudioProjects/TabLayoutWithViewPager/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/ic_fast_rewind.xml",
+        "source": "/home/venkatesh/AndroidStudioProjects/TabLayoutWithViewPager/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_fast_rewind.xml"
+    },
+    {
+        "merged": "/home/venkatesh/AndroidStudioProjects/TabLayoutWithViewPager/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/ic_pause_circle_outline.xml",
+        "source": "/home/venkatesh/AndroidStudioProjects/TabLayoutWithViewPager/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_pause_circle_outline.xml"
+    },
+    {
+        "merged": "/home/venkatesh/AndroidStudioProjects/TabLayoutWithViewPager/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/design_ic_visibility_off.xml",
+        "source": "/home/venkatesh/.android/build-cache/9f11b61cc2629d70782f2b41666a0ea85fa09927/output/res/drawable-anydpi-v21/design_ic_visibility_off.xml"
+    },
+    {
+        "merged": "/home/venkatesh/AndroidStudioProjects/TabLayoutWithViewPager/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/ic_play_circle_outline.xml",
+        "source": "/home/venkatesh/AndroidStudioProjects/TabLayoutWithViewPager/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_play_circle_outline.xml"
+    },
+    {
+        "merged": "/home/venkatesh/AndroidStudioProjects/TabLayoutWithViewPager/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/design_ic_visibility.xml",
+        "source": "/home/venkatesh/.android/build-cache/9f11b61cc2629d70782f2b41666a0ea85fa09927/output/res/drawable-anydpi-v21/design_ic_visibility.xml"
+    }
+]

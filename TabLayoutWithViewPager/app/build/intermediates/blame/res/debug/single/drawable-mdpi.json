@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "/home/venkatesh/AndroidStudioProjects/TabLayoutWithViewPager/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_pause_circle_outline.png",
+        "source": "/home/venkatesh/AndroidStudioProjects/TabLayoutWithViewPager/app/build/generated/res/pngs/debug/drawable-mdpi/ic_pause_circle_outline.png"
+    },
+    {
+        "merged": "/home/venkatesh/AndroidStudioProjects/TabLayoutWithViewPager/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_play_circle_outline.png",
+        "source": "/home/venkatesh/AndroidStudioProjects/TabLayoutWithViewPager/app/build/generated/res/pngs/debug/drawable-mdpi/ic_play_circle_outline.png"
+    },
+    {
+        "merged": "/home/venkatesh/AndroidStudioProjects/TabLayoutWithViewPager/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_fast_rewind.png",
+        "source": "/home/venkatesh/AndroidStudioProjects/TabLayoutWithViewPager/app/build/generated/res/pngs/debug/drawable-mdpi/ic_fast_rewind.png"
+    },
+    {
+        "merged": "/home/venkatesh/AndroidStudioProjects/TabLayoutWithViewPager/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_equalizer.png",
+        "source": "/home/venkatesh/AndroidStudioProjects/TabLayoutWithViewPager/app/build/generated/res/pngs/debug/drawable-mdpi/ic_equalizer.png"
+    },
+    {
+        "merged": "/home/venkatesh/AndroidStudioProjects/TabLayoutWithViewPager/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_fast_forward.png",
+        "source": "/home/venkatesh/AndroidStudioProjects/TabLayoutWithViewPager/app/build/generated/res/pngs/debug/drawable-mdpi/ic_fast_forward.png"
+    }
+]

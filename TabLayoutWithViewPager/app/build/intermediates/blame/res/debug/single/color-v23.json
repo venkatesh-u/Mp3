@@ -1,0 +1,46 @@
+[
+    {
+        "merged": "/home/venkatesh/AndroidStudioProjects/TabLayoutWithViewPager/app/build/intermediates/res/merged/debug/color-v23/abc_tint_default.xml",
+        "source": "/home/venkatesh/.android/build-cache/44e80b8967e98aeb353465df467baf911aae2cdb/output/res/color-v23/abc_tint_default.xml"
+    },
+    {
+        "merged": "/home/venkatesh/AndroidStudioProjects/TabLayoutWithViewPager/app/build/intermediates/res/merged/debug/color-v23/abc_tint_edittext.xml",
+        "source": "/home/venkatesh/.android/build-cache/44e80b8967e98aeb353465df467baf911aae2cdb/output/res/color-v23/abc_tint_edittext.xml"
+    },
+    {
+        "merged": "/home/venkatesh/AndroidStudioProjects/TabLayoutWithViewPager/app/build/intermediates/res/merged/debug/color-v23/abc_color_highlight_material.xml",
+        "source": "/home/venkatesh/.android/build-cache/44e80b8967e98aeb353465df467baf911aae2cdb/output/res/color-v23/abc_color_highlight_material.xml"
+    },
+    {
+        "merged": "/home/venkatesh/AndroidStudioProjects/TabLayoutWithViewPager/app/build/intermediates/res/merged/debug/color-v23/abc_tint_switch_thumb.xml",
+        "source": "/home/venkatesh/.android/build-cache/44e80b8967e98aeb353465df467baf911aae2cdb/output/res/color-v23/abc_tint_switch_thumb.xml"
+    },
+    {
+        "merged": "/home/venkatesh/AndroidStudioProjects/TabLayoutWithViewPager/app/build/intermediates/res/merged/debug/color-v23/abc_tint_btn_checkable.xml",
+        "source": "/home/venkatesh/.android/build-cache/44e80b8967e98aeb353465df467baf911aae2cdb/output/res/color-v23/abc_tint_btn_checkable.xml"
+    },
+    {
+        "merged": "/home/venkatesh/AndroidStudioProjects/TabLayoutWithViewPager/app/build/intermediates/res/merged/debug/color-v23/design_tint_password_toggle.xml",
+        "source": "/home/venkatesh/.android/build-cache/9f11b61cc2629d70782f2b41666a0ea85fa09927/output/res/color-v23/design_tint_password_toggle.xml"
+    },
+    {
+        "merged": "/home/venkatesh/AndroidStudioProjects/TabLayoutWithViewPager/app/build/intermediates/res/merged/debug/color-v23/abc_tint_switch_track.xml",
+        "source": "/home/venkatesh/.android/build-cache/44e80b8967e98aeb353465df467baf911aae2cdb/output/res/color-v23/abc_tint_switch_track.xml"
+    },
+    {
+        "merged": "/home/venkatesh/AndroidStudioProjects/TabLayoutWithViewPager/app/build/intermediates/res/merged/debug/color-v23/abc_btn_colored_borderless_text_material.xml",
+        "source": "/home/venkatesh/.android/build-cache/44e80b8967e98aeb353465df467baf911aae2cdb/output/res/color-v23/abc_btn_colored_borderless_text_material.xml"
+    },
+    {
+        "merged": "/home/venkatesh/AndroidStudioProjects/TabLayoutWithViewPager/app/build/intermediates/res/merged/debug/color-v23/abc_btn_colored_text_material.xml",
+        "source": "/home/venkatesh/.android/build-cache/44e80b8967e98aeb353465df467baf911aae2cdb/output/res/color-v23/abc_btn_colored_text_material.xml"
+    },
+    {
+        "merged": "/home/venkatesh/AndroidStudioProjects/TabLayoutWithViewPager/app/build/intermediates/res/merged/debug/color-v23/abc_tint_spinner.xml",
+        "source": "/home/venkatesh/.android/build-cache/44e80b8967e98aeb353465df467baf911aae2cdb/output/res/color-v23/abc_tint_spinner.xml"
+    },
+    {
+        "merged": "/home/venkatesh/AndroidStudioProjects/TabLayoutWithViewPager/app/build/intermediates/res/merged/debug/color-v23/abc_tint_seek_thumb.xml",
+        "source": "/home/venkatesh/.android/build-cache/44e80b8967e98aeb353465df467baf911aae2cdb/output/res/color-v23/abc_tint_seek_thumb.xml"
+    }
+]

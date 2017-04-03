@@ -1,0 +1,127 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/venkatesh/AndroidStudioProjects/TabLayoutWithViewPager/app/src/main/AndroidManifest.xml:2:1-36:12
+	package
+		ADDED from /home/venkatesh/AndroidStudioProjects/TabLayoutWithViewPager/app/src/main/AndroidManifest.xml:3:5-41
+		INJECTED from /home/venkatesh/AndroidStudioProjects/TabLayoutWithViewPager/app/src/main/AndroidManifest.xml
+		INJECTED from /home/venkatesh/AndroidStudioProjects/TabLayoutWithViewPager/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/venkatesh/AndroidStudioProjects/TabLayoutWithViewPager/app/src/main/AndroidManifest.xml
+		INJECTED from /home/venkatesh/AndroidStudioProjects/TabLayoutWithViewPager/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/venkatesh/AndroidStudioProjects/TabLayoutWithViewPager/app/src/main/AndroidManifest.xml:2:11-69
+	android:versionCode
+		INJECTED from /home/venkatesh/AndroidStudioProjects/TabLayoutWithViewPager/app/src/main/AndroidManifest.xml
+		INJECTED from /home/venkatesh/AndroidStudioProjects/TabLayoutWithViewPager/app/src/main/AndroidManifest.xml
+uses-permission#android.permission.MEDIA_CONTENT_CONTROL
+ADDED from /home/venkatesh/AndroidStudioProjects/TabLayoutWithViewPager/app/src/main/AndroidManifest.xml:6:5-79
+	android:name
+		ADDED from /home/venkatesh/AndroidStudioProjects/TabLayoutWithViewPager/app/src/main/AndroidManifest.xml:6:22-77
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /home/venkatesh/AndroidStudioProjects/TabLayoutWithViewPager/app/src/main/AndroidManifest.xml:7:5-79
+	android:name
+		ADDED from /home/venkatesh/AndroidStudioProjects/TabLayoutWithViewPager/app/src/main/AndroidManifest.xml:7:22-77
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /home/venkatesh/AndroidStudioProjects/TabLayoutWithViewPager/app/src/main/AndroidManifest.xml:8:5-80
+	android:name
+		ADDED from /home/venkatesh/AndroidStudioProjects/TabLayoutWithViewPager/app/src/main/AndroidManifest.xml:8:22-78
+application
+ADDED from /home/venkatesh/AndroidStudioProjects/TabLayoutWithViewPager/app/src/main/AndroidManifest.xml:10:5-34:19
+MERGED from [com.android.support.constraint:constraint-layout:1.0.0-beta4] /home/venkatesh/.android/build-cache/42d739e584ae1d6aa74324767f5b7825f93fc97e/output/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:design:25.3.0] /home/venkatesh/.android/build-cache/9f11b61cc2629d70782f2b41666a0ea85fa09927/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:appcompat-v7:25.3.0] /home/venkatesh/.android/build-cache/44e80b8967e98aeb353465df467baf911aae2cdb/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.0] /home/venkatesh/.android/build-cache/3eed50c0304be590f9cf9321e29882fc0c4a0486/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.0] /home/venkatesh/.android/build-cache/b091a23e800baa04073afc9955e7f8c24d7f182b/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:transition:25.3.0] /home/venkatesh/.android/build-cache/413f0198870a62f18efaabbbc98a1c5a3df769cd/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-v4:25.3.0] /home/venkatesh/.android/build-cache/01078997f6fe488c42de389b67e83c4998a58659/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:25.3.0] /home/venkatesh/.android/build-cache/6d92b69dd8ab42650a9830fd307c46cf80d7c6b7/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.0] /home/venkatesh/.android/build-cache/5df3a3b6c20d4214e93a4044d78d8661e8d287e3/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.0] /home/venkatesh/.android/build-cache/4345cd404ebe3559493852b957917e3a81021e8b/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.0] /home/venkatesh/.android/build-cache/bb345132d10e8bdc3a97803a247385f5e2c75125/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:25.3.0] /home/venkatesh/.android/build-cache/7b8d9f52184c50a3c204014b5bc1194aba355b79/output/AndroidManifest.xml:29:5-20
+	android:label
+		ADDED from /home/venkatesh/AndroidStudioProjects/TabLayoutWithViewPager/app/src/main/AndroidManifest.xml:13:9-41
+	android:supportsRtl
+		ADDED from /home/venkatesh/AndroidStudioProjects/TabLayoutWithViewPager/app/src/main/AndroidManifest.xml:14:9-35
+	android:allowBackup
+		ADDED from /home/venkatesh/AndroidStudioProjects/TabLayoutWithViewPager/app/src/main/AndroidManifest.xml:11:9-35
+	android:icon
+		ADDED from /home/venkatesh/AndroidStudioProjects/TabLayoutWithViewPager/app/src/main/AndroidManifest.xml:12:9-43
+activity#roy.tablayoutwithviewpager.MainActivity
+ADDED from /home/venkatesh/AndroidStudioProjects/TabLayoutWithViewPager/app/src/main/AndroidManifest.xml:15:9-21:20
+	android:theme
+		ADDED from /home/venkatesh/AndroidStudioProjects/TabLayoutWithViewPager/app/src/main/AndroidManifest.xml:16:13-44
+	android:name
+		ADDED from /home/venkatesh/AndroidStudioProjects/TabLayoutWithViewPager/app/src/main/AndroidManifest.xml:15:19-47
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /home/venkatesh/AndroidStudioProjects/TabLayoutWithViewPager/app/src/main/AndroidManifest.xml:17:13-20:29
+action#android.intent.action.MAIN
+ADDED from /home/venkatesh/AndroidStudioProjects/TabLayoutWithViewPager/app/src/main/AndroidManifest.xml:18:17-69
+	android:name
+		ADDED from /home/venkatesh/AndroidStudioProjects/TabLayoutWithViewPager/app/src/main/AndroidManifest.xml:18:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/venkatesh/AndroidStudioProjects/TabLayoutWithViewPager/app/src/main/AndroidManifest.xml:19:17-77
+	android:name
+		ADDED from /home/venkatesh/AndroidStudioProjects/TabLayoutWithViewPager/app/src/main/AndroidManifest.xml:19:27-74
+activity#roy.tablayoutwithviewpager.ArtistsSubActivity
+ADDED from /home/venkatesh/AndroidStudioProjects/TabLayoutWithViewPager/app/src/main/AndroidManifest.xml:23:9-24:53
+	android:theme
+		ADDED from /home/venkatesh/AndroidStudioProjects/TabLayoutWithViewPager/app/src/main/AndroidManifest.xml:24:13-51
+	android:name
+		ADDED from /home/venkatesh/AndroidStudioProjects/TabLayoutWithViewPager/app/src/main/AndroidManifest.xml:23:19-53
+activity#roy.tablayoutwithviewpager.ActivityPlay
+ADDED from /home/venkatesh/AndroidStudioProjects/TabLayoutWithViewPager/app/src/main/AndroidManifest.xml:26:9-27:47
+	android:theme
+		ADDED from /home/venkatesh/AndroidStudioProjects/TabLayoutWithViewPager/app/src/main/AndroidManifest.xml:27:13-44
+	android:name
+		ADDED from /home/venkatesh/AndroidStudioProjects/TabLayoutWithViewPager/app/src/main/AndroidManifest.xml:26:19-47
+activity#roy.tablayoutwithviewpager.ActivityPlaying
+ADDED from /home/venkatesh/AndroidStudioProjects/TabLayoutWithViewPager/app/src/main/AndroidManifest.xml:29:9-30:53
+	android:theme
+		ADDED from /home/venkatesh/AndroidStudioProjects/TabLayoutWithViewPager/app/src/main/AndroidManifest.xml:30:13-51
+	android:name
+		ADDED from /home/venkatesh/AndroidStudioProjects/TabLayoutWithViewPager/app/src/main/AndroidManifest.xml:29:19-50
+service#roy.tablayoutwithviewpager.MediaPlayerService
+ADDED from /home/venkatesh/AndroidStudioProjects/TabLayoutWithViewPager/app/src/main/AndroidManifest.xml:32:9-55
+	android:name
+		ADDED from /home/venkatesh/AndroidStudioProjects/TabLayoutWithViewPager/app/src/main/AndroidManifest.xml:32:18-52
+uses-sdk
+INJECTED from /home/venkatesh/AndroidStudioProjects/TabLayoutWithViewPager/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support.constraint:constraint-layout:1.0.0-beta4] /home/venkatesh/.android/build-cache/42d739e584ae1d6aa74324767f5b7825f93fc97e/output/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:design:25.3.0] /home/venkatesh/.android/build-cache/9f11b61cc2629d70782f2b41666a0ea85fa09927/output/AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:appcompat-v7:25.3.0] /home/venkatesh/.android/build-cache/44e80b8967e98aeb353465df467baf911aae2cdb/output/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:25.3.0] /home/venkatesh/.android/build-cache/3eed50c0304be590f9cf9321e29882fc0c4a0486/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.3.0] /home/venkatesh/.android/build-cache/b091a23e800baa04073afc9955e7f8c24d7f182b/output/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:25.3.0] /home/venkatesh/.android/build-cache/63b5ae1765622fc470e91f9cec986e26fa1b9d0e/output/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:transition:25.3.0] /home/venkatesh/.android/build-cache/413f0198870a62f18efaabbbc98a1c5a3df769cd/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:25.3.0] /home/venkatesh/.android/build-cache/01078997f6fe488c42de389b67e83c4998a58659/output/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.3.0] /home/venkatesh/.android/build-cache/6d92b69dd8ab42650a9830fd307c46cf80d7c6b7/output/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.3.0] /home/venkatesh/.android/build-cache/5df3a3b6c20d4214e93a4044d78d8661e8d287e3/output/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:25.3.0] /home/venkatesh/.android/build-cache/4345cd404ebe3559493852b957917e3a81021e8b/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:25.3.0] /home/venkatesh/.android/build-cache/bb345132d10e8bdc3a97803a247385f5e2c75125/output/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:25.3.0] /home/venkatesh/.android/build-cache/7b8d9f52184c50a3c204014b5bc1194aba355b79/output/AndroidManifest.xml:21:5-23:58
+	tools:overrideLibrary
+		ADDED from [com.android.support:design:25.3.0] /home/venkatesh/.android/build-cache/9f11b61cc2629d70782f2b41666a0ea85fa09927/output/AndroidManifest.xml:23:9-59
+	android:targetSdkVersion
+		INJECTED from /home/venkatesh/AndroidStudioProjects/TabLayoutWithViewPager/app/src/main/AndroidManifest.xml
+		INJECTED from /home/venkatesh/AndroidStudioProjects/TabLayoutWithViewPager/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/venkatesh/AndroidStudioProjects/TabLayoutWithViewPager/app/src/main/AndroidManifest.xml
+		INJECTED from /home/venkatesh/AndroidStudioProjects/TabLayoutWithViewPager/app/src/main/AndroidManifest.xml
+meta-data#android.support.VERSION
+ADDED from [com.android.support:design:25.3.0] /home/venkatesh/.android/build-cache/9f11b61cc2629d70782f2b41666a0ea85fa09927/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:appcompat-v7:25.3.0] /home/venkatesh/.android/build-cache/44e80b8967e98aeb353465df467baf911aae2cdb/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.0] /home/venkatesh/.android/build-cache/3eed50c0304be590f9cf9321e29882fc0c4a0486/output/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.0] /home/venkatesh/.android/build-cache/b091a23e800baa04073afc9955e7f8c24d7f182b/output/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:recyclerview-v7:25.3.0] /home/venkatesh/.android/build-cache/63b5ae1765622fc470e91f9cec986e26fa1b9d0e/output/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:transition:25.3.0] /home/venkatesh/.android/build-cache/413f0198870a62f18efaabbbc98a1c5a3df769cd/output/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-v4:25.3.0] /home/venkatesh/.android/build-cache/01078997f6fe488c42de389b67e83c4998a58659/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-fragment:25.3.0] /home/venkatesh/.android/build-cache/6d92b69dd8ab42650a9830fd307c46cf80d7c6b7/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.0] /home/venkatesh/.android/build-cache/5df3a3b6c20d4214e93a4044d78d8661e8d287e3/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.0] /home/venkatesh/.android/build-cache/4345cd404ebe3559493852b957917e3a81021e8b/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.0] /home/venkatesh/.android/build-cache/bb345132d10e8bdc3a97803a247385f5e2c75125/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-compat:25.3.0] /home/venkatesh/.android/build-cache/7b8d9f52184c50a3c204014b5bc1194aba355b79/output/AndroidManifest.xml:25:5-27:34
+	android:value
+		ADDED from [com.android.support:design:25.3.0] /home/venkatesh/.android/build-cache/9f11b61cc2629d70782f2b41666a0ea85fa09927/output/AndroidManifest.xml:27:9-31
+	android:name
+		ADDED from [com.android.support:design:25.3.0] /home/venkatesh/.android/build-cache/9f11b61cc2629d70782f2b41666a0ea85fa09927/output/AndroidManifest.xml:26:9-47

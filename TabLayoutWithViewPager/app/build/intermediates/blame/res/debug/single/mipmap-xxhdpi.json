@@ -1,5 +1,9 @@
 [
     {
+        "merged": "/home/venkatesh/AndroidProjects/Mp3/Mp3/TabLayoutWithViewPager/app/build/intermediates/res/merged/debug/mipmap-xxhdpi/ic_launcher.png",
+        "source": "/home/venkatesh/AndroidProjects/Mp3/Mp3/TabLayoutWithViewPager/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
         "merged": "/home/venkatesh/AndroidStudioProjects/TabLayoutWithViewPager/app/build/intermediates/res/merged/debug/mipmap-xxhdpi/ic_launcher.png",
         "source": "/home/venkatesh/AndroidStudioProjects/TabLayoutWithViewPager/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
     }

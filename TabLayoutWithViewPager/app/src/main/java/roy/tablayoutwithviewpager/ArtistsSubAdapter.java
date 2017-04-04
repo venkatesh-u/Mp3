@@ -1,10 +1,12 @@
 package roy.tablayoutwithviewpager;
 
 import android.app.Activity;
+import android.content.BroadcastReceiver;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
+import android.support.v4.content.LocalBroadcastManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -14,7 +16,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
-import java.util.IllegalFormatCodePointException;
 
 /**
  * Created by venkatesh on 20/3/17.
@@ -165,6 +166,10 @@ class ArtistsSubAdapter extends RecyclerView.Adapter<ArtistsSubAdapter.SampleVie
 
                 }
 
+                Intent intent = new Intent("receiver_updateFragment");
+                intent.putExtra("key", "venky");
+                LocalBroadcastManager.getInstance(act).sendBroadcast(intent);
+
 
             }
         });
@@ -238,7 +243,7 @@ class ArtistsSubAdapter extends RecyclerView.Adapter<ArtistsSubAdapter.SampleVie
     public void refreshList(int s, String action) {
 
         SubActivityModel model = songs_list.get(s);
-        model.isVisible = true;
+//        model.isVisible = true;
         model.isNextPrevious = false;
         model.is_play = false;
         model.fromNotification = true;

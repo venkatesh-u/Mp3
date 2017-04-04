@@ -44,6 +44,7 @@ class AdapterAllSongs extends RecyclerView.Adapter<AdapterAllSongs.SampleViewHol
     @Override
     public void onBindViewHolder(final SampleViewHolder holder, final int position) {
         this.holder = holder;
+
         holder.tvSongName.setText(songs_list.get(position).song_name);
 
 

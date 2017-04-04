@@ -14,7 +14,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -39,23 +38,21 @@ public class ArtistsSubActivity extends AppCompatActivity implements ArtistsSubA
     boolean serviceBound = true;
     public static final String Broadcast_PLAY_NEW_AUDIO = "audioplayer.PlayNewAudio";
     public static final String Broadcast_PLAY_NEW_AUDIO_TAB = "from_tab";
-    private BroadcastReceiver receiver, receiver2, receiver3;
+    private BroadcastReceiver receiver;
+    private BroadcastReceiver receiver2;
+    private BroadcastReceiver receiver3;
 
-    boolean flag = true;
+    boolean isSongPlaying = false;
 
-    // Change to your package name
+
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.recyclerview_layout);
-
-
         Bundle bundle = getIntent().getBundleExtra("bundle");
         ArrayList<SubActivityModel> songs_list = (ArrayList<SubActivityModel>) bundle.getSerializable("songs_list");
-//        getSongsOfEachArtist(artist_obj);
 
-//           ArrayList<String> songs_list = getIntent().getStringArrayListExtra("songs_list");
 
         receiver = new BroadcastReceiver() {
             @Override
@@ -81,7 +78,6 @@ public class ArtistsSubActivity extends AppCompatActivity implements ArtistsSubA
         receiver3 = new BroadcastReceiver() {
             @Override
             public void onReceive(Context context, Intent intent) {
-
                 int s = intent.getIntExtra("data", -1);
                 String action = intent.getStringExtra("action");
                 artistsSubAdapter.refreshList(s, action);
@@ -135,7 +131,7 @@ public class ArtistsSubActivity extends AppCompatActivity implements ArtistsSubA
             MediaPlayerService.LocalBinder binder = (MediaPlayerService.LocalBinder) service;
             player = binder.getService();
             serviceBound = false;
-
+            isSongPlaying = false;
             Toast.makeText(ArtistsSubActivity.this, "Service Bound", Toast.LENGTH_SHORT).show();
         }
 
@@ -212,6 +208,7 @@ public class ArtistsSubActivity extends AppCompatActivity implements ArtistsSubA
 //            }
 
             serviceBound = true;
+            isSongPlaying = true;
 
         } else {
             //Store the new audioIndex to SharedPreferences
@@ -268,17 +265,23 @@ public class ArtistsSubActivity extends AppCompatActivity implements ArtistsSubA
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        if (serviceBound) {
-            unbindService(serviceConnection);
+
+        if (isSongPlaying){
+
+            setUnBindService();
+
+        }else if (!serviceBound) {
             //service is active
 //            player.stopSelf();
-
-            serviceBound = true;
-            Toast.makeText(this, "Service unBound", Toast.LENGTH_SHORT).show();
-
+            setUnBindService();
 
         }
 
+    }
+
+        public void setUnBindService(){
+            unbindService(serviceConnection);
+            serviceBound = true;
         }
 
 

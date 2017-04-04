@@ -108,43 +108,43 @@ public class MediaPlayerService extends Service implements MediaPlayer.OnComplet
         registerBecomingNoisyReceiver();
         //Listen for new Audio to play -- BroadcastReceiver
         register_playNewAudio();
-        register_playNewAudiofromTab();
+//        register_playNewAudiofromTab();
         broadcaster = LocalBroadcastManager.getInstance(this);
         broadcaster2 = LocalBroadcastManager.getInstance(this);
         broadcaster3 = LocalBroadcastManager.getInstance(this);
     }
 
-    private void register_playNewAudiofromTab() {
-        //Register playNewMedia receiver
-        IntentFilter filter = new IntentFilter(ArtistsSubActivity.Broadcast_PLAY_NEW_AUDIO_TAB);
-        registerReceiver(playNewAudioTab, filter);
-    }
+//    private void register_playNewAudiofromTab() {
+//        //Register playNewMedia receiver
+//        IntentFilter filter = new IntentFilter(ArtistsSubActivity.Broadcast_PLAY_NEW_AUDIO_TAB);
+//        registerReceiver(playNewAudioTab, filter);
+//    }
 
 
-    BroadcastReceiver playNewAudioTab = new BroadcastReceiver() {
-        @Override
-        public void onReceive(Context context, Intent intent) {
-            audioIndex = new StorageUtil(getApplicationContext()).loadAudioIndex();
-            audioList = new StorageUtil(getApplicationContext()).loadAudio();
-
-            if (audioIndex != -1 && audioIndex < audioList.size()) {
-                //index is in a valid range
-                activeAudio = audioList.get(audioIndex);
-            } else {
-                stopSelf();
-            }
-
-            //A PLAY_NEW_AUDIO action received
-            //reset mediaPlayer to play the new Audio
-            stopMedia();
-            mediaPlayer.reset();
-            initMediaPlayer();
-            updateMetaData();
-            buildNotification(PlaybackStatus.PLAYING);
-
-
-        }
-    };
+//    BroadcastReceiver playNewAudioTab = new BroadcastReceiver() {
+//        @Override
+//        public void onReceive(Context context, Intent intent) {
+//            audioIndex = new StorageUtil(getApplicationContext()).loadAudioIndex();
+//            audioList = new StorageUtil(getApplicationContext()).loadAudio();
+//
+//            if (audioIndex != -1 && audioIndex < audioList.size()) {
+//                //index is in a valid range
+//                activeAudio = audioList.get(audioIndex);
+//            } else {
+//                stopSelf();
+//            }
+//
+//            //A PLAY_NEW_AUDIO action received
+//            //reset mediaPlayer to play the new Audio
+//            stopMedia();
+//            mediaPlayer.reset();
+//            initMediaPlayer();
+//            updateMetaData();
+//            buildNotification(PlaybackStatus.PLAYING);
+//
+//
+//        }
+//    };
 
 
     private void initMediaPlayer() {
@@ -185,6 +185,7 @@ public class MediaPlayerService extends Service implements MediaPlayer.OnComplet
     }
 
     public void pauseMedia() {
+        if (mediaPlayer!=null)
         if (mediaPlayer.isPlaying()) {
             mediaPlayer.pause();
             resumePosition = mediaPlayer.getCurrentPosition();
@@ -344,13 +345,14 @@ public class MediaPlayerService extends Service implements MediaPlayer.OnComplet
             e.printStackTrace();
         }
 
-
-        if (foregroud){
-            handleIncomingActions(sIntent);
-
-        }else {
-            removeNotification();
-        }
+        handleIncomingActions(sIntent);
+//        if (foregroud){
+//
+//
+//        }
+//        else {
+//            removeNotification();
+//        }
 
 
         //Load data from SharedPreferences
@@ -470,6 +472,7 @@ public class MediaPlayerService extends Service implements MediaPlayer.OnComplet
         //unregister BroadcastReceivers
         unregisterReceiver(becomingNoisyReceiver);
         unregisterReceiver(playNewAudio);
+//        unregisterReceiver(receiverr);
         //clear cached playlist
         new StorageUtil(getApplicationContext()).clearCachedAudioPlaylist();
     }
@@ -607,7 +610,7 @@ public class MediaPlayerService extends Service implements MediaPlayer.OnComplet
     }
 
 
-    private final BroadcastReceiver receiverr = new BroadcastReceiver() {
+    private final BroadcastReceiver receiver_delete_notification = new BroadcastReceiver() {
         @Override
         public void onReceive(Context context, Intent intent) {
 //            aVariable = 0; // Do what you want here
@@ -622,17 +625,17 @@ public class MediaPlayerService extends Service implements MediaPlayer.OnComplet
             } catch (ExecutionException e) {
                 e.printStackTrace();
             }
-            stopMedia();
+
+            sendResultReceiver3(audioIndex, "Refresh");
+
             if (foregroud){
-
-
+                stopMedia();
             }else {
                 mediaSessionManager =null;
                 stopSelf();
 
             }
 
-            sendResultReceiver3(audioIndex, "Refresh");
 
 
         }
@@ -675,7 +678,7 @@ public class MediaPlayerService extends Service implements MediaPlayer.OnComplet
         //When remove notification it stops service.
         Intent intent = new Intent(NOTIFICATION_DELETED_ACTION);
         PendingIntent pendintIntent = PendingIntent.getBroadcast(this, 0, intent, 0);
-        registerReceiver(receiverr, new IntentFilter(NOTIFICATION_DELETED_ACTION));
+        registerReceiver(receiver_delete_notification , new IntentFilter(NOTIFICATION_DELETED_ACTION));
 
 
         MediaControllerCompat controller = mediaSession.getController();
@@ -691,7 +694,7 @@ public class MediaPlayerService extends Service implements MediaPlayer.OnComplet
                         .setShowActionsInCompactView(0, 1, 2))
 
                         // Enable launching the player by clicking the notification
-//                        .setContentIntent(controller.getSessionActivity())
+                        .setContentIntent(controller.getSessionActivity())
 
                         // Make the transport controls visible on the lockscreen
 //                        .setVisibility(NotificationCompat.VISIBILITY_PRIVATE)
@@ -841,10 +844,13 @@ public class MediaPlayerService extends Service implements MediaPlayer.OnComplet
         @Override
         public void onReceive(Context context, Intent intent) {
             //pause audio on ACTION_AUDIO_BECOMING_NOISY
+            sendResultReceiver2(audioIndex, "ACTION_PAUSE");
             pauseMedia();
             buildNotification(PlaybackStatus.PAUSED);
+
         }
     };
+
 
     private void registerBecomingNoisyReceiver() {
         //register after getting audio focus

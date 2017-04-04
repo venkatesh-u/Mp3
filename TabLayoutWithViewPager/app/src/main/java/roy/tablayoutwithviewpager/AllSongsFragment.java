@@ -2,6 +2,7 @@ package roy.tablayoutwithviewpager;
 
 
 import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.content.BroadcastReceiver;
 import android.content.ComponentName;
 import android.content.Context;
@@ -48,9 +49,10 @@ public class AllSongsFragment extends Fragment implements AdapterAllSongs.Interf
     String action_refresh = null;
 
     private MediaPlayerService player;
-    boolean serviceBound = true;
+    boolean fragServiceBound = true;
+    boolean isPlaying = false;
     public static final String Broadcast_PLAY_NEW_AUDIO = "audioplayer.PlayNewAudio";
-    private BroadcastReceiver receiver, receiver2, receiver3;
+    private BroadcastReceiver receiver, receiver2, receiver3, receiver_updateFragment;
 
 
 
@@ -61,14 +63,16 @@ public class AllSongsFragment extends Fragment implements AdapterAllSongs.Interf
             // We've bound to LocalService, cast the IBinder and get LocalService instance
             MediaPlayerService.LocalBinder binder = (MediaPlayerService.LocalBinder) service;
             player = binder.getService();
-            serviceBound = false;
+            fragServiceBound = false;
 
             Toast.makeText(getActivity(), "Service Bound", Toast.LENGTH_SHORT).show();
         }
 
         @Override
         public void onServiceDisconnected(ComponentName name) {
-            serviceBound = true;
+            fragServiceBound = true;
+            Toast.makeText(getActivity(), "Service UnBound", Toast.LENGTH_SHORT).show();
+
         }
     };
 
@@ -101,9 +105,9 @@ public class AllSongsFragment extends Fragment implements AdapterAllSongs.Interf
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
-        // Inflate the layout for this fragment
-        Intent playerIntent = new Intent(getActivity(), MediaPlayerService.class);
-        getActivity().bindService(playerIntent, serviceConnection, Context.BIND_AUTO_CREATE);
+//        // Inflate the layout for this fragment
+//        Intent playerIntent = new Intent(getActivity(), MediaPlayerService.class);
+//        getActivity().bindService(playerIntent, serviceConnection, Context.BIND_AUTO_CREATE);
 
         recyclerView_allsongs = (RecyclerView) getActivity().findViewById(R.id.recycler_view_allsongs);
         songsData = (ArrayList<DataObjects>) getArguments().getSerializable("songsData");
@@ -116,7 +120,6 @@ public class AllSongsFragment extends Fragment implements AdapterAllSongs.Interf
 
 
 
-//        adapterAllSongs = new AdapterAllSongs(getActivity(), songsData);
         adapter = new AdapterAllSongs(songsList, this, getActivity());
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getActivity());
         recyclerView_allsongs.setLayoutManager(mLayoutManager);
@@ -156,6 +159,14 @@ public class AllSongsFragment extends Fragment implements AdapterAllSongs.Interf
         };
 
 
+        receiver_updateFragment =  new BroadcastReceiver() {
+            @Override
+            public void onReceive(Context context, Intent intent) {
+                //refresh Fragment3
+                setAdapter();
+            }
+        };
+
 
         LocalBroadcastManager.getInstance(getActivity()).registerReceiver((receiver), new IntentFilter("intent_filter_update"));
         LocalBroadcastManager.getInstance(getActivity()).registerReceiver((receiver2), new IntentFilter("intent_filter_receiver2"));
@@ -164,6 +175,10 @@ public class AllSongsFragment extends Fragment implements AdapterAllSongs.Interf
 
     }
 
+    private void setAdapter() {
+        adapter = new AdapterAllSongs(songsList, this, getActivity());
+        recyclerView_allsongs.setAdapter(adapter);
+    }
 
 
     private ArrayList<SubActivityModel> getAllSongs(ArrayList<DataObjects> songsData) {
@@ -190,7 +205,7 @@ public class AllSongsFragment extends Fragment implements AdapterAllSongs.Interf
     @Override
     public void playAudio(ArrayList<SubActivityModel> audioList, int audioIndex) {
         //Check is service is active
-        if (!serviceBound) {
+        if (!fragServiceBound) {
             //Store Serializable audioList to SharedPreferences
             StorageUtil storage = new StorageUtil(getActivity());
             storage.storeAudio(audioList);
@@ -208,7 +223,8 @@ public class AllSongsFragment extends Fragment implements AdapterAllSongs.Interf
 //                sendBroadcast(broadcastIntent1);
 //            }
 
-            serviceBound = true;
+            fragServiceBound = true;
+            isPlaying = true;
 
         } else {
             //Store the new audioIndex to SharedPreferences
@@ -250,14 +266,14 @@ public class AllSongsFragment extends Fragment implements AdapterAllSongs.Interf
 
     @Override
     public void onSaveInstanceState(Bundle savedInstanceState) {
-        savedInstanceState.putBoolean("ServiceState", serviceBound);
+        savedInstanceState.putBoolean("ServiceState", fragServiceBound);
         super.onSaveInstanceState(savedInstanceState);
     }
 
 //    @Override
 //    public void onRestoreInstanceState(Bundle savedInstanceState) {
 //        super.onRestoreInstanceState(savedInstanceState);
-//        serviceBound = savedInstanceState.getBoolean("ServiceState");
+//        fragServiceBound = savedInstanceState.getBoolean("ServiceState");
 //    }
 
 
@@ -273,26 +289,50 @@ public class AllSongsFragment extends Fragment implements AdapterAllSongs.Interf
     @Override
     public void onResume() {
         super.onResume();
-        serviceBound = false;
+//        fragServiceBound = false;
+        LocalBroadcastManager.getInstance(getActivity()).registerReceiver( (receiver_updateFragment), new IntentFilter("receiver_updateFragment") );
 
-        if (!serviceBound){
+        if (fragServiceBound){
             Intent playerIntent = new Intent(getActivity(), MediaPlayerService.class);
-            getActivity().startService(playerIntent);
+//            getActivity().startService(playerIntent);
             getActivity().bindService(playerIntent, serviceConnection, Context.BIND_AUTO_CREATE);
+            fragServiceBound = false;
+            isPlaying = true;
         }
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+
+
     }
 
     @Override
     public void onDestroy() {
         super.onDestroy();
-        if (serviceBound) {
+
+        if (isPlaying){
+
+            getActivity().unbindService(serviceConnection);
+            fragServiceBound = true;
+
+
+        }else if (!fragServiceBound) {
             getActivity().unbindService(serviceConnection);
             //service is active
 //            player.stopSelf();
 
-            serviceBound = true;
+            fragServiceBound = true;
 
         }
+//        getActivity().unregisterReceiver(receiver_updateFragment);
 
     }
+
+    @Override
+    public void onAttach(Context context) {
+        super.onAttach(context);
+    }
+
 }

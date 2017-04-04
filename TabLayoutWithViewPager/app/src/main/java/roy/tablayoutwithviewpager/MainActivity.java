@@ -46,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
    public Intent playerIntent;
     boolean doubleBackToExitPressedOnce = false;
 
+    private LocalBroadcastManager receiver_updateFragment;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -56,7 +57,10 @@ public class MainActivity extends AppCompatActivity {
         SongsData = new ArrayList<>();
 
 
+
+
         checkPermissions();
+
 
 
         manager = getSupportFragmentManager();
@@ -397,6 +401,17 @@ public void checkPermissions(){
     }
 
 
+
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+
+    }
+
+
+
     @Override
     public void onBackPressed() {
 
@@ -416,4 +431,6 @@ public void checkPermissions(){
         }, 2000);
 
     }
+
+
 }

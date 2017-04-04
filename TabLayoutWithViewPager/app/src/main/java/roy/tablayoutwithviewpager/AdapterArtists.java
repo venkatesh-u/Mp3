@@ -71,7 +71,7 @@ class AdapterArtists extends RecyclerView.Adapter<AdapterArtists.SimpleHolder> {
 //                Bundle bundle = new Bundle();
 //                bundle.putSerializable("artists_object", artists.get(position));
 //                intent.putExtra("artists_bundle", bundle);
-                act.startActivity(intent);
+                act.startActivityForResult(intent, 101);
 
             }
         });

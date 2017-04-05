@@ -255,15 +255,21 @@ public class AllSongsFragment extends Fragment implements AdapterAllSongs.Interf
 
     @Override
     public void resumeAudio() {
+
 //        if (player==null){
 //            Intent playerIntent = new Intent(getActivity(), MediaPlayerService.class);
 //            getActivity().startService(playerIntent);
 //            getActivity().bindService(playerIntent, serviceConnection, Context.BIND_AUTO_CREATE);
 //        }
         player.setResumeToNotification();
+        opeNEqualizerDialogue();
 
     }
-
+    private void opeNEqualizerDialogue() {
+        AudioFxDemo audioFxDemo=new AudioFxDemo(getActivity(),Utils.mMediaPlayer);
+        audioFxDemo.show();
+        audioFxDemo.setCancelable(true);
+    }
     @Override
     public void onSaveInstanceState(Bundle savedInstanceState) {
         savedInstanceState.putBoolean("ServiceState", fragServiceBound);

@@ -1,10 +1,14 @@
 [
     {
-        "merged": "/home/venkatesh/AndroidStudioProjects/TabLayoutWithViewPager/app/build/intermediates/res/merged/debug/mipmap-hdpi/ic_launcher.png",
-        "source": "/home/venkatesh/AndroidStudioProjects/TabLayoutWithViewPager/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+        "merged": "D:\\home\\venkatesh\\AndroidProjects\\Mp3\\Mp3\\TabLayoutWithViewPager\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_launcher.png",
+        "source": "D:\\home\\venkatesh\\AndroidProjects\\Mp3\\Mp3\\TabLayoutWithViewPager\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     },
     {
-        "merged": "/home/venkatesh/AndroidProjects/Mp3/Mp3/TabLayoutWithViewPager/app/build/intermediates/res/merged/debug/mipmap-hdpi/ic_launcher.png",
-        "source": "/home/venkatesh/AndroidProjects/Mp3/Mp3/TabLayoutWithViewPager/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+        "merged": "D:\\home\\venkatesh\\AndroidStudioProjects\\TabLayoutWithViewPager\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_launcher.png",
+        "source": "D:\\home\\venkatesh\\AndroidStudioProjects\\TabLayoutWithViewPager\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\VenkiMp3\\Mp3\\Mp3\\TabLayoutWithViewPager\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_launcher.png",
+        "source": "D:\\VenkiMp3\\Mp3\\Mp3\\TabLayoutWithViewPager\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     }
 ]

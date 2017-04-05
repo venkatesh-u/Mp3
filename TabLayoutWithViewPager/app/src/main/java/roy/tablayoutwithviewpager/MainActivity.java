@@ -1,11 +1,9 @@
 package roy.tablayoutwithviewpager;
 
 import android.Manifest;
-import android.content.BroadcastReceiver;
 import android.content.ContentUris;
 import android.content.Context;
 import android.content.Intent;
-import android.content.IntentFilter;
 import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.graphics.Bitmap;
@@ -13,18 +11,15 @@ import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Build;
-import android.os.Environment;
+import android.os.Bundle;
+import android.os.Handler;
 import android.os.ParcelFileDescriptor;
 import android.provider.MediaStore;
-import android.support.annotation.RequiresApi;
 import android.support.design.widget.TabLayout;
-import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentManager;
-import android.support.v4.content.ContextCompat;
 import android.support.v4.content.LocalBroadcastManager;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.util.Log;
 import android.widget.Toast;
 
@@ -32,7 +27,6 @@ import java.io.File;
 import java.io.FileDescriptor;
 import java.util.ArrayList;
 import java.util.HashMap;
-import android.os.Handler;
 
 public class MainActivity extends AppCompatActivity {
     ViewPager  pager;
@@ -208,6 +202,7 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(MainActivity.this, "list size: "+list.size(), Toast.LENGTH_SHORT).show();
 //            setAdapter(list);
             pagerAdapter = new PagerAdapter(manager, SongsData);
+            pager.setOffscreenPageLimit(2);
             pager.setAdapter(pagerAdapter);
             //pager.setCurrentItem(0);
             //pager.setOffscreenPageLimit(1);

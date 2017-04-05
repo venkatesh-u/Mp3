@@ -211,6 +211,7 @@ public class ArtistsSubActivity extends AppCompatActivity implements ArtistsSubA
             isSongPlaying = true;
 
         } else {
+
             //Store the new audioIndex to SharedPreferences
             StorageUtil storage = new StorageUtil(getApplicationContext());
             storage.storeAudioIndex(audioIndex);
@@ -223,6 +224,8 @@ public class ArtistsSubActivity extends AppCompatActivity implements ArtistsSubA
 
 
     }
+
+
 
     @Override
     public void pauseAudio() {

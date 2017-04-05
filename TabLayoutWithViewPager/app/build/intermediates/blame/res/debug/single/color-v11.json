@@ -1,18 +1,26 @@
 [
     {
-        "merged": "/home/venkatesh/AndroidProjects/Mp3/Mp3/TabLayoutWithViewPager/app/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_dark.xml",
-        "source": "/home/venkatesh/.android/build-cache/44e80b8967e98aeb353465df467baf911aae2cdb/output/res/color-v11/abc_background_cache_hint_selector_material_dark.xml"
+        "merged": "D:\\home\\venkatesh\\AndroidStudioProjects\\TabLayoutWithViewPager\\app\\build\\intermediates\\res\\merged\\debug\\color-v11\\abc_background_cache_hint_selector_material_light.xml",
+        "source": "D:\\home\\venkatesh\\.android\\build-cache\\44e80b8967e98aeb353465df467baf911aae2cdb\\output\\res\\color-v11\\abc_background_cache_hint_selector_material_light.xml"
     },
     {
-        "merged": "/home/venkatesh/AndroidStudioProjects/TabLayoutWithViewPager/app/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_light.xml",
-        "source": "/home/venkatesh/.android/build-cache/44e80b8967e98aeb353465df467baf911aae2cdb/output/res/color-v11/abc_background_cache_hint_selector_material_light.xml"
+        "merged": "D:\\home\\venkatesh\\AndroidStudioProjects\\TabLayoutWithViewPager\\app\\build\\intermediates\\res\\merged\\debug\\color-v11\\abc_background_cache_hint_selector_material_dark.xml",
+        "source": "D:\\home\\venkatesh\\.android\\build-cache\\44e80b8967e98aeb353465df467baf911aae2cdb\\output\\res\\color-v11\\abc_background_cache_hint_selector_material_dark.xml"
     },
     {
-        "merged": "/home/venkatesh/AndroidProjects/Mp3/Mp3/TabLayoutWithViewPager/app/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_light.xml",
-        "source": "/home/venkatesh/.android/build-cache/44e80b8967e98aeb353465df467baf911aae2cdb/output/res/color-v11/abc_background_cache_hint_selector_material_light.xml"
+        "merged": "D:\\home\\venkatesh\\AndroidProjects\\Mp3\\Mp3\\TabLayoutWithViewPager\\app\\build\\intermediates\\res\\merged\\debug\\color-v11\\abc_background_cache_hint_selector_material_light.xml",
+        "source": "D:\\home\\venkatesh\\.android\\build-cache\\44e80b8967e98aeb353465df467baf911aae2cdb\\output\\res\\color-v11\\abc_background_cache_hint_selector_material_light.xml"
     },
     {
-        "merged": "/home/venkatesh/AndroidStudioProjects/TabLayoutWithViewPager/app/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_dark.xml",
-        "source": "/home/venkatesh/.android/build-cache/44e80b8967e98aeb353465df467baf911aae2cdb/output/res/color-v11/abc_background_cache_hint_selector_material_dark.xml"
+        "merged": "D:\\home\\venkatesh\\AndroidProjects\\Mp3\\Mp3\\TabLayoutWithViewPager\\app\\build\\intermediates\\res\\merged\\debug\\color-v11\\abc_background_cache_hint_selector_material_dark.xml",
+        "source": "D:\\home\\venkatesh\\.android\\build-cache\\44e80b8967e98aeb353465df467baf911aae2cdb\\output\\res\\color-v11\\abc_background_cache_hint_selector_material_dark.xml"
+    },
+    {
+        "merged": "D:\\VenkiMp3\\Mp3\\Mp3\\TabLayoutWithViewPager\\app\\build\\intermediates\\res\\merged\\debug\\color-v11\\abc_background_cache_hint_selector_material_light.xml",
+        "source": "C:\\Users\\mramesh\\.android\\build-cache\\d7c792d5d6848302829d32f2f425d0dc763d4c8f\\output\\res\\color-v11\\abc_background_cache_hint_selector_material_light.xml"
+    },
+    {
+        "merged": "D:\\VenkiMp3\\Mp3\\Mp3\\TabLayoutWithViewPager\\app\\build\\intermediates\\res\\merged\\debug\\color-v11\\abc_background_cache_hint_selector_material_dark.xml",
+        "source": "C:\\Users\\mramesh\\.android\\build-cache\\d7c792d5d6848302829d32f2f425d0dc763d4c8f\\output\\res\\color-v11\\abc_background_cache_hint_selector_material_dark.xml"
     }
 ]
